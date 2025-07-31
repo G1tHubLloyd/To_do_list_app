@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#item-input {
+  width: calc(100% - 70px);
+  padding: 10px;
+  margin-right: 5px;
+}
+
+/* Apply hand cursor to buttons */
+button,
+#add-button,
+.delete-button {
+  cursor: pointer;
+}
+
+/* Make task items clickable */
+.item-text,
+.todo-item {
+  cursor: pointer;
+}
+
+/* Optional: Grab cursor for sortable tasks */
+.todo-item.drag-handle {
+  cursor: grab;
+}
+
+/* Change to grabbing while dragging */
+.todo-item.drag-handle:active {
+  cursor: grabbing;
+}
+
+#add-button {
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.delete-button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
